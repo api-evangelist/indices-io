@@ -64,9 +64,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Indices is building the infrastructure that enables AI agents to act across the web in real time, securely and reliably. The team brings decades of experience in large‑scale distributed systems, security, and low‑latency engineering, having built battle‑hardened platforms for finance and cloud services. Their platform aims to provide usable, trustworthy data and tooling for AI agents, supporting use‑cases from data retrieval to autonomous actions on the internet.
+Indices builds the infrastructure that enables AI agents to navigate and act across the web in real time. By providing reliable, secure, and scalable services, Indices empowers developers to create agents that can retrieve, process, and act upon web data safely and efficiently. The company leverages years of experience in large‑scale systems to deliver tools that support the emerging AI‑driven web ecosystem.
 
-**Areas:** Company · AI · Infrastructure · Real-time · Security
+**Areas:** Company · AI · Infrastructure · Web · Agents
 
 ## indices-io on APIs.io
 
@@ -74,54 +74,104 @@ Everything profiled for indices-io is published on APIs.io rather than in this r
 
 ### APIs (1)
 
-- [Indices API](https://apis.io/apis/indices-io/indices-api/) — The Indices REST API providing AI agent data services.
+- [Indices API](https://apis.io/apis/indices-io/indices-api/) — The Indices REST API. See docs for details: https://docs.indices.io
 
 ### Published properties
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-#### Security (1)
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Indices Io Agentic Access](https://apis.io/agentic-access/indices-io/indices-io-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [CaptureSession](https://apis.io/schemas/indices-io/indices-io-capture-session/)
+- [Connector](https://apis.io/schemas/indices-io/indices-io-connector/)
+- [CreateRunRequest](https://apis.io/schemas/indices-io/indices-io-create-run-request/)
+- [CreateSecretRequest](https://apis.io/schemas/indices-io/indices-io-create-secret-request/)
+- [File](https://apis.io/schemas/indices-io/indices-io-file/)
+- [Run](https://apis.io/schemas/indices-io/indices-io-run/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Indices Io Context](https://apis.io/jsonld/indices-io/indices-io-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [indices-io API Rules](https://apis.io/rules/indices-io/indices-io-rules/)
+
+#### Security (2)
 
 Authentication, trust centre, and vulnerability disclosure.
 
+- [Indices Io Authentication](https://apis.io/security/indices-io/indices-io-authentication/)
 - [Indices Io Domain Security](https://apis.io/security/indices-io/indices-io-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Indices Io Scopes](https://apis.io/scopes/indices-io/indices-io-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Indices Io Plans Pricing](https://apis.io/plans/indices-io/indices-io-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Indices Io Rate Limits](https://apis.io/rate-limits/indices-io/indices-io-rate-limits/)
 
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://indices.io/)
+- [Terms of service](https://indices.io/terms)
+- [Privacy policy](https://indices.io/privacy)
 - [GitHub](https://github.com/indicesio)
-- [Status](https://status.indices.io/)
+- [Status](https://status.indices.io)
 
 ## API Evangelist rating
 
-**Kin Score 11.6** — emerging · rubric 0.25.0 · scored 2026-10-31
+**Kin Score 48.4** — developing · rubric 0.25.0 · scored 2026-10-30
 
 | Facet | Score |
 |---|---|
-| Discoverability | 62.5 |
-| Contract quality | 0.0 |
-| Contract governance | 16.4 |
-| Operational transparency | 21.1 |
-| Developer ergonomics | 7.1 |
-| Access clarity | 0.0 |
+| Discoverability | 66.1 |
+| Contract quality | 58.3 |
+| Contract governance | 79.1 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 35.0 |
+| Access clarity | 21.1 |
 
-**Agent readiness 3.1** — human-only
+**Agent readiness 38.3** — agent-ready
 
 | Agent-readiness dimension | Result |
 |---|---|
-| Spec Presence | — |
-| Agentic Access | — |
+| Spec Presence | yes |
+| Agentic Access | unknown |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
-| Auth Clarity | — |
+| Auth Clarity | bearer (partial credit) |
 | Idempotency | — |
-| Error Semantics | — |
+| Error Semantics | verified |
 | OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | — |
-| Agent Skills | — |
+| Agent Skills | unknown |
 | Well Known Catalog | — |
 | Consent Identity | — |
 | Agent Card | — |
@@ -130,10 +180,10 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
-| Pagination Ratio | na |
-| Operation Distinctiveness | na |
+| Pagination Ratio | partial |
+| Operation Distinctiveness | distinct |
 
-**Regulatory alignment 10.0** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 26.4** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/indices-io/](https://apis.io/providers/indices-io/).
 
